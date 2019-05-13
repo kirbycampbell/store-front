@@ -65,7 +65,7 @@ const product8 = product(
   59,
   "Small",
   1994,
-  "https://cdn.shopify.com/s/files/1/1132/5272/products/Dawn_a05aa900-3f5a-42d9-8170-0b6d07c4330a_2048x2048.jpg?v=1536795524"
+  "https://oldnavy.gap.com/webcontent/0016/658/190/cn16658190.jpg"
 );
 const product9 = product(
   "Low Wasted Gym Shorts",
