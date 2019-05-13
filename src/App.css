@@ -56,6 +56,12 @@
   cursor: pointer;
 }
 
+.detail-outer {
+  background: rgba(206, 174, 203, 0.096);
+  padding: 3px;
+  border-radius: 100px;
+}
+
 .prod-title {
   margin: 0;
   font-size: 20px;
