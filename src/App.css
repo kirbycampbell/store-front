@@ -1,10 +1,13 @@
 .App {
   text-align: center;
+  max-width: 1600px;
+  margin: auto;
 }
 
 .navbar {
   display: flex;
   height: 200px;
+  width: 100%;
   background: rgba(170, 99, 18, 0.37);
   color: rgb(32, 28, 28);
   font-family: proxima-nova;
@@ -17,29 +20,38 @@
 .imgager {
   margin: 20px;
   max-height: 500px;
-  max-width: 500px;
+  max-width: 00px;
 }
 
 .outer-cont {
-  padding-top: 10px;
-  background: rgba(53, 22, 61, 0.164);
+  padding: 5% 5%;
+  background: rgba(53, 22, 61, 0.024);
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
-  height: 100vh;
+  height: 100%;
+}
+.prod-img {
+  max-height: 280px;
+  max-width: 280px;
 }
 
 .card-cont {
-  border: 1px solid black;
-  height: 200px;
-  width: 40%;
+  width: 30%;
   margin: 20px 20px;
 }
 
 .card {
 }
 
-h1 {
+.prod-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
   margin: 0;
 }
