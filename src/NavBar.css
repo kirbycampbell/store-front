@@ -1,0 +1,54 @@
+.navbar {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  background: rgba(170, 99, 18, 0.37);
+  color: rgb(32, 28, 28);
+  font-family: proxima-nova;
+  font-weight: 400;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar-btn {
+  color: rgba(19, 16, 16, 0.703);
+  font-size: 54px;
+  transition: color 0.3s ease-in-out;
+}
+.bar-btn:hover {
+  cursor: pointer;
+  color: rgb(92, 73, 43);
+  transition: color 0.3s ease-in-out;
+}
+.left-nav {
+  text-align: center;
+  width: 33.3%;
+}
+.title {
+  width: 33.3%;
+  background: -webkit-linear-gradient(
+    rgb(146, 19, 19, 0.7),
+    rgba(15, 31, 29, 0.7),
+    rgb(10, 10, 44, 0.7)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 54px;
+  font-family: "Permanent Marker", cursive;
+  color: white;
+}
+
+.cart-area {
+  width: 33.3%;
+  text-align: center;
+}
+
+.cart-icon {
+  transition: color 0.3s ease-in-out;
+}
+.cart-icon:hover {
+  cursor: pointer;
+  color: rgb(92, 73, 43);
+  transition: color 0.3s ease-in-out;
+}

@@ -1,0 +1,72 @@
+.outer-cont {
+  padding: 5% 5%;
+  background: rgba(53, 22, 61, 0.024);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+}
+.prod-img {
+  text-align: center;
+  max-height: 280px;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+  transition: opacity 0.5s ease;
+}
+
+.prod-img:hover {
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+}
+
+.card-cont {
+  width: 30%;
+  margin: 16px 20px;
+}
+
+.card {
+  transition: box-shadow 0.5s, border-radius 0.4s, background 0.5s ease;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 8px 2px rgba(56, 83, 95, 0.133);
+  border-radius: 20px;
+  transition: box-shadow 0.2s, border-radius 0.4s, background 0.2s ease;
+  background: rgba(93, 93, 156, 0.083);
+  cursor: pointer;
+}
+
+.detail-outer {
+  background: rgba(206, 174, 203, 0.096);
+  padding: 3px;
+  border-radius: 100px;
+}
+
+.prod-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.prod-details {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 5px;
+  font-family: "Quattrocento Sans Bold", sans-serif;
+
+  color: rgba(0, 0, 0, 0.637);
+}
+
+.prod-price {
+  width: 50%;
+}
+.prod-size {
+  width: 30%;
+}
+
+p {
+  margin: 0;
+}
