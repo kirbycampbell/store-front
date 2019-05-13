@@ -5,6 +5,10 @@ import { allSeedProductData } from "./StoreData";
 
 function App() {
   console.log(allSeedProductData);
+
+  const productClick = id => {
+    console.log(id);
+  };
   return (
     <div className="App">
       <div className="navbar">Vantage Vintage</div>
@@ -21,7 +25,11 @@ function App() {
       <div className="outer-cont">
         {allSeedProductData.map(product => {
           return (
-            <div key={product.id} className="card-cont">
+            <div
+              key={product.id}
+              className="card-cont"
+              onClick={() => productClick(product.id)}
+            >
               <div className="card">
                 <h1>{product.name}</h1>
                 <p>{product.price}</p>

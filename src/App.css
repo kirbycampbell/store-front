@@ -19,3 +19,27 @@
   max-height: 500px;
   max-width: 500px;
 }
+
+.outer-cont {
+  padding-top: 10px;
+  background: rgba(53, 22, 61, 0.164);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+.card-cont {
+  border: 1px solid black;
+  height: 200px;
+  width: 40%;
+  margin: 20px 20px;
+}
+
+.card {
+}
+
+h1 {
+  margin: 0;
+}
