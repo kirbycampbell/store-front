@@ -40,10 +40,20 @@
 
 .card-cont {
   width: 30%;
-  margin: 20px 20px;
+  margin: 16px 20px;
 }
 
 .card {
+  transition: box-shadow 0.5s, border-radius 0.4s, background 0.5s ease;
+  padding: 5px;
+}
+
+.card:hover {
+  box-shadow: -2px -2px 8px 2px rgba(56, 83, 95, 0.521);
+  border-radius: 20px;
+  transition: box-shadow 0.2s, border-radius 0.4s, background 0.2s ease;
+  background: rgba(93, 93, 156, 0.103);
+  cursor: pointer;
 }
 
 .prod-title {
