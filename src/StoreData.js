@@ -60,12 +60,12 @@ const product7 = product(
   "https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/cireta4oc8j53qunjcvz/pro-womens-3-training-shorts-v2TERYBP.jpg"
 );
 const product8 = product(
-  "Low Wasted Gym Shorts",
-  "Shorts",
-  23,
+  "Black Floral Dress",
+  "Dress",
+  59,
   "Small",
-  2001,
-  "https://images-na.ssl-images-amazon.com/images/I/61gxAr%2BvDML._UX385_.jpg"
+  1994,
+  "https://cdn.shopify.com/s/files/1/1132/5272/products/Dawn_a05aa900-3f5a-42d9-8170-0b6d07c4330a_2048x2048.jpg?v=1536795524"
 );
 const product9 = product(
   "Low Wasted Gym Shorts",
