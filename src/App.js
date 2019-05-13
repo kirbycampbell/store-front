@@ -27,10 +27,13 @@ function App() {
                     src={product.image}
                     alt={product.id}
                   />
-                  <div className="prod-title">{product.name}</div>
-                  <p>{product.price}</p>
-                  <p>{product.size}</p>
-                  <p>{product.year}</p>
+                  <div className="prod-title">
+                    {product.year} {product.name}
+                  </div>
+                  <div className="prod-details">
+                    <p className="prod-price">${product.price}</p>
+                    <p className="prod-size">{product.size}</p>
+                  </div>
                 </div>
               </div>
             );
