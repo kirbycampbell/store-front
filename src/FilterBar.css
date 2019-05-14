@@ -19,6 +19,10 @@
   transition: color 0.2s ease;
 }
 
+.active {
+  color: rgb(13, 170, 175);
+}
+
 .divider {
   border-left: 2px solid rgba(0, 0, 0, 0.432);
 
