@@ -37,16 +37,10 @@
   cursor: pointer;
 }
 
-.detail-outer {
-  background: rgba(206, 174, 203, 0.096);
-  padding: 3px;
-  border-radius: 100px;
-}
-
 .prod-title {
   margin: 0;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
+
   flex-wrap: wrap;
 }
 
@@ -62,6 +56,8 @@
 
 .prod-price {
   width: 50%;
+  font-weight: bold;
+  font-size: 18px;
 }
 .prod-size {
   width: 30%;
