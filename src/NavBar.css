@@ -27,6 +27,7 @@
 }
 .title {
   width: 33.3%;
+  text-align: center;
   background: -webkit-linear-gradient(
     rgb(146, 19, 19, 0.7),
     rgba(15, 31, 29, 0.7),

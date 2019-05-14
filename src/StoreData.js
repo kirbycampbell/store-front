@@ -52,12 +52,12 @@ const product6 = product(
   "https://images-na.ssl-images-amazon.com/images/I/61gxAr%2BvDML._UX385_.jpg"
 );
 const product7 = product(
-  "Nike Underwear",
+  "Nike Underwear White",
   "Underwear",
   9,
-  "Extra Large",
+  "Large",
   2002,
-  "https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/cireta4oc8j53qunjcvz/pro-womens-3-training-shorts-v2TERYBP.jpg"
+  "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSQczcbZXXVSiBZZrO4i7kgcu7u9e-mcjmLyTm9jhaaYciErP0B_aj_VlEe9KFRenT8ncMjvC61gABX1rMH8ThzUJMAUGIeelYR58mGZ0zgjz02SLljAJLb&usqp=CAE"
 );
 const product8 = product(
   "Black Floral Dress",
@@ -75,6 +75,22 @@ const product9 = product(
   2001,
   "https://images-na.ssl-images-amazon.com/images/I/61gxAr%2BvDML._UX385_.jpg"
 );
+const product10 = product(
+  "Yellow Crop Top Spaghetti Strap",
+  "Tops",
+  99,
+  "Large",
+  1997,
+  "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSWReAvP4LV55WXUFFXxQ-_XUZ4iJ1zJTnMU7Sczu3hZPhPc0NZtKC5aNrkgNuqNWn5JeUwXMFcA-JUXc-dmwTGZV7gYDo60EBzE_3fnck&usqp=CAE"
+);
+const product11 = product(
+  "Men's Fossil Watch",
+  "Miscellaneous",
+  105,
+  "All Sizes",
+  1998,
+  "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTYktdPpvZdjSNiHqYApH8Dq6s-6h3vKdkCB3Ki-7t7zcfMbpDmmc-_zWSvgn-VYY8jtTZ3ztPaZYSamEUWIEXDiUFZtAuXmaFI6jPBuZgHHrg-cy5MhKO7&usqp=CAE"
+);
 export const allSeedProductData = [
   product1,
   product2,
@@ -84,5 +100,7 @@ export const allSeedProductData = [
   product6,
   product7,
   product8,
-  product9
+  product9,
+  product10,
+  product11
 ];
