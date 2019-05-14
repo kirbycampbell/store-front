@@ -1,0 +1,34 @@
+.filter-bar-outer {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Amatic SC", cursive;
+  font-size: 34px;
+}
+
+.filter-item {
+  margin: 0px 22px;
+  transition: color 0.2s ease;
+}
+
+.filter-item:hover {
+  color: rgb(175, 119, 13);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.divider {
+  border-left: 2px solid rgba(0, 0, 0, 0.432);
+
+  height: 30%;
+}
+
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Cairo', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Alegreya', serif;
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Quattrocento Sans', sans-serif;
+font-family: 'Philosopher', sans-serif; */

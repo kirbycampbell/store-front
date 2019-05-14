@@ -4,7 +4,7 @@ import { product } from "./ProductClass";
 
 const product1 = product(
   "Floral Summer Dress",
-  "Dress",
+  "Tops",
   65,
   "Small",
   1995,
@@ -12,7 +12,7 @@ const product1 = product(
 );
 const product2 = product(
   "Button Up Denim Shirt",
-  "Shirt",
+  "Tops",
   95,
   "Medium",
   1999,
@@ -20,7 +20,7 @@ const product2 = product(
 );
 const product3 = product(
   "Bell Bottom Jinkos",
-  "Pants",
+  "Bottoms",
   229,
   "Extra Large",
   2002,
@@ -28,7 +28,7 @@ const product3 = product(
 );
 const product4 = product(
   "High Wasted Track Shorts",
-  "Shorts",
+  "Bottoms",
   38,
   "Extra Small",
   2006,
@@ -45,7 +45,7 @@ const product5 = product(
 );
 const product6 = product(
   "Low Wasted Gym Shorts",
-  "Shorts",
+  "Bottoms",
   23,
   "Small",
   2001,
@@ -61,7 +61,7 @@ const product7 = product(
 );
 const product8 = product(
   "Black Floral Dress",
-  "Dress",
+  "Tops",
   59,
   "Small",
   1994,
@@ -69,7 +69,7 @@ const product8 = product(
 );
 const product9 = product(
   "Low Wasted Gym Shorts",
-  "Shorts",
+  "Bottoms",
   23,
   "Small",
   2001,
