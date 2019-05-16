@@ -76,12 +76,14 @@
     margin: auto;
     width: 100%;
     overflow: hidden;
+    user-select: none;
   }
 
   .prod-img {
     max-height: 90%;
     clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
     transition: opacity 0.5s ease;
+    user-select: none;
   }
 
   .prod-img:hover {
@@ -203,12 +205,14 @@
     margin: auto;
     width: 100%;
     overflow: hidden;
+    user-select: none;
   }
 
   .prod-img {
     max-height: 90%;
     clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
     transition: opacity 0.5s ease;
+    user-select: none;
   }
 
   .prod-img:hover {

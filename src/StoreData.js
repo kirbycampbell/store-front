@@ -91,6 +91,14 @@ const product11 = product(
   1998,
   "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTYktdPpvZdjSNiHqYApH8Dq6s-6h3vKdkCB3Ki-7t7zcfMbpDmmc-_zWSvgn-VYY8jtTZ3ztPaZYSamEUWIEXDiUFZtAuXmaFI6jPBuZgHHrg-cy5MhKO7&usqp=CAE"
 );
+const product12 = product(
+  "Button Up Denim Shirt",
+  "Tops",
+  95,
+  "Medium",
+  1999,
+  "https://images.asos-media.com/products/asos-design-denim-shirt-in-cali-light-wash/8584413-1-calilightwashblue?$XXL$&wid=513&fit=constrain"
+);
 export const allSeedProductData = [
   product1,
   product2,
@@ -102,5 +110,6 @@ export const allSeedProductData = [
   product8,
   product9,
   product10,
-  product11
+  product11,
+  product12
 ];
