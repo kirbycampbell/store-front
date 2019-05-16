@@ -59,6 +59,7 @@
     padding: 5px;
     overflow: hidden;
     position: relative;
+    user-select: none;
   }
 
   .card:hover {
@@ -144,6 +145,7 @@
     justify-content: center;
     height: 100%;
     width: 99%;
+    user-select: none;
   }
 
   .card-cont {
@@ -187,6 +189,7 @@
     padding: 5px;
     overflow: hidden;
     position: relative;
+    user-select: none;
   }
 
   .card:hover {
@@ -228,6 +231,7 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    user-select: none;
   }
 
   .prod-title {
@@ -244,6 +248,7 @@
     margin-top: 5px;
     font-family: "Quattrocento Sans Bold", sans-serif;
     color: rgba(0, 0, 0, 0.637);
+    user-select: none;
   }
 
   .prod-price {
