@@ -80,7 +80,7 @@
   }
 
   .prod-img {
-    max-height: 90%;
+    max-height: 86%;
     clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
     transition: opacity 0.5s ease;
     user-select: none;
@@ -209,7 +209,7 @@
   }
 
   .prod-img {
-    max-height: 90%;
+    max-height: 80%;
     clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
     transition: opacity 0.5s ease;
     user-select: none;
@@ -240,11 +240,9 @@
   .prod-details {
     display: flex;
     width: 100%;
-
     margin: auto;
     margin-top: 5px;
     font-family: "Quattrocento Sans Bold", sans-serif;
-
     color: rgba(0, 0, 0, 0.637);
   }
 

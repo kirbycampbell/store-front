@@ -50,8 +50,14 @@
     color: white;
   }
 
-  .cart-area {
+  .heart-cart-cont {
     width: 20%;
+  }
+
+  .cart-area {
+    display: flex;
+    width: 50%;
+    margin: auto;
     text-align: center;
   }
 
@@ -62,6 +68,19 @@
     cursor: pointer;
     color: rgb(92, 73, 43);
     transition: color 0.3s ease-in-out;
+  }
+
+  .heart-cont {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    height: 36px;
+    width: 36px;
+  }
+
+  .heart-icon {
+    color: rgba(202, 37, 37, 0.637);
   }
 }
 @media only screen and (max-width: 900px) {

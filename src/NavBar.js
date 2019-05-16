@@ -9,8 +9,13 @@ const NavBar = () => {
           <i className="fas fa-bars bar-btn" />
         </div>
         <div className="title">Vantage Vintage</div>
-        <div className="cart-area">
-          <i className="fas fa-shopping-cart cart-icon" />
+        <div className="heart-cart-cont">
+          <div className="cart-area">
+            <div className="heart-cont">
+              <i className="fas fa-heart heart-icon" />
+            </div>
+            <i className="fas fa-shopping-cart cart-icon" />
+          </div>
         </div>
       </div>
     </div>
