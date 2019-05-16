@@ -29,6 +29,9 @@ const MainContent = props => {
                       src={product.image}
                       alt={product.id}
                     />
+                    <div className="heart-like">
+                      <i className="fas fa-heart heart-box" />
+                    </div>
                   </div>
                   <div className="detail-outer">
                     <div className="prod-title">

@@ -1,110 +1,59 @@
 @media only screen and (min-width: 900px) {
   .outer-cont {
-    padding: 5% 5%;
-    background: rgba(53, 22, 61, 0.024);
+    /* background: rgba(53, 22, 61, 0.024); */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 100%;
-  }
-  .prod-img {
-    text-align: center;
-    max-height: 280px;
-    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
-    transition: opacity 0.5s ease;
-  }
-
-  .prod-img:hover {
-    opacity: 0.8;
-    transition: opacity 0.5s ease;
-  }
-
-  .card-cont {
-    width: 30%;
-    margin: 16px 20px;
-  }
-
-  .card {
-    transition: box-shadow 0.5s, border-radius 0.4s, background 0.5s ease;
-    padding: 5px;
-    overflow: hidden;
-  }
-
-  .card:hover {
-    box-shadow: 0px 0px 8px 2px rgba(56, 83, 95, 0.133);
-    border-radius: 20px;
-    transition: box-shadow 0.2s, border-radius 0.4s, background 0.2s ease;
-    background: rgba(93, 93, 156, 0.083);
-    cursor: pointer;
-  }
-
-  .prod-title {
-    margin: 0;
-    font-size: 18px;
-
-    flex-wrap: wrap;
-  }
-
-  .prod-details {
-    display: flex;
-    width: 80%;
     margin: auto;
-    margin-top: 5px;
-    font-family: "Quattrocento Sans Bold", sans-serif;
-
-    color: rgba(0, 0, 0, 0.637);
-  }
-
-  .prod-price {
-    width: 50%;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  .prod-size {
-    width: 30%;
-  }
-
-  p {
-    margin: 0;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .outer-cont {
-    background: rgba(53, 22, 61, 0.024);
-    display: flex;
-    margin-top: 15px;
     margin-bottom: 15px;
     flex-wrap: wrap;
     justify-content: center;
     height: 100%;
     width: 99%;
-  }
-
-  .outer-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85%;
-  }
-  .prod-img {
-    max-height: 90%;
-    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
-    transition: opacity 0.5s ease;
-  }
-
-  .prod-img:hover {
-    opacity: 0.8;
-    transition: opacity 0.5s ease;
+    max-width: 1200px;
   }
 
   .card-cont {
-    width: 47%;
+    width: 32%;
     margin: 4px 4px;
+  }
+
+  .heart-like {
+    position: absolute;
+    right: 8%;
+    top: 30px;
+  }
+
+  .heart-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1 px solid black;
+    background: rgb(255, 255, 255);
+    border-radius: 100px;
+    text-align: center;
+    font-size: 20px;
+    width: 28px;
+    height: 28px;
+    color: rgba(202, 77, 77, 0.699);
+    transition: color 0.4s ease;
+    transition: background 0.4s ease;
+  }
+  .heart-box:hover {
+    background: rgba(39, 60, 119, 0.671);
+    color: rgb(240, 140, 140);
+    transition: color 0.4s ease;
+    transition: background 0.4s ease;
+  }
+  .heart-box:active {
+    background: rgba(39, 60, 119, 0.671);
+    transform: translate(1px, 1px);
+    color: rgb(240, 140, 140);
+    transition: color 0.4s ease;
+    transition: background 0.4s ease;
   }
 
   .card {
     margin: auto;
-    width: 100%;
+    max-width: 190px;
     height: 290px;
     transition: box-shadow 0.5s, border-radius 0.4s, background 0.5s ease;
     padding: 5px;
@@ -120,10 +69,161 @@
     cursor: pointer;
   }
 
+  .outer-img {
+    display: flex;
+    justify-content: center;
+    height: 88%;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .prod-img {
+    max-height: 90%;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+    transition: opacity 0.5s ease;
+  }
+
+  .prod-img:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
+  }
+
   .detail-outer {
     position: absolute;
     bottom: 0;
+    max-width: 200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .prod-title {
+    margin: 0;
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+
+  .prod-details {
+    display: flex;
     width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    font-family: "Quattrocento Sans Bold", sans-serif;
+    color: rgba(0, 0, 0, 0.637);
+  }
+
+  .prod-price {
+    width: 60%;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .prod-size {
+    width: 50%;
+    text-align: right;
+    margin-right: 6px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .outer-cont {
+    background: rgba(53, 22, 61, 0.024);
+    display: flex;
+    margin: auto;
+
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    width: 99%;
+  }
+
+  .card-cont {
+    width: 47%;
+    margin: 4px 4px;
+  }
+
+  .heart-like {
+    position: absolute;
+    right: 8%;
+    top: 30px;
+  }
+
+  .heart-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1 px solid black;
+    background: rgb(255, 255, 255);
+    border-radius: 100px;
+    text-align: center;
+    font-size: 20px;
+    width: 28px;
+    height: 28px;
+    color: rgba(202, 77, 77, 0.699);
+    transition: color 0.4s ease;
+    transition: background 0.4s ease;
+  }
+  .heart-box:hover {
+    background: rgba(39, 60, 119, 0.671);
+    color: rgb(240, 140, 140);
+    transition: color 0.4s ease;
+    transition: background 0.4s ease;
+  }
+
+  .card {
+    margin: auto;
+    max-width: 190px;
+    height: 290px;
+    transition: box-shadow 0.5s, border-radius 0.4s, background 0.5s ease;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .card:hover {
+    box-shadow: 0px 0px 8px 2px rgba(56, 83, 95, 0.133);
+    border-radius: 20px;
+    transition: box-shadow 0.2s, border-radius 0.4s, background 0.2s ease;
+    background: rgba(93, 93, 156, 0.083);
+    cursor: pointer;
+  }
+
+  .outer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .prod-img {
+    max-height: 90%;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+    transition: opacity 0.5s ease;
+  }
+
+  .prod-img:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
+  }
+
+  .detail-outer {
+    position: absolute;
+    bottom: 0;
+    max-width: 200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .prod-title {
