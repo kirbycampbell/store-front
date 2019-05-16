@@ -23,11 +23,13 @@ const MainContent = props => {
                 onClick={() => productClick(product.id)}
               >
                 <div className="card">
-                  <img
-                    className="prod-img"
-                    src={product.image}
-                    alt={product.id}
-                  />
+                  <div className="outer-img">
+                    <img
+                      className="prod-img"
+                      src={product.image}
+                      alt={product.id}
+                    />
+                  </div>
                   <div className="detail-outer">
                     <div className="prod-title">
                       {product.year} {product.name}
