@@ -16,6 +16,7 @@ const MainContent = props => {
   }, [props.category]);
 
   const MappedProducts = () => {
+    // ::::::::::::::: IF NO FIlter is Applied - Render this MAIN VIEW ::::::::::
     if (props.category === "" || props.category === "All") {
       return (
         <div className="outer-cont">
@@ -56,6 +57,7 @@ const MainContent = props => {
         </div>
       );
     } else if (props.category !== "" && props.category !== "All") {
+      // ::::::::: When a Filter IS applied - render the FILTERED List :::::::::::::::
       return (
         <div className="outer-cont">
           {allSeedProductData.map(product => {
@@ -67,11 +69,19 @@ const MainContent = props => {
                   onClick={() => productClick(product.id)}
                 >
                   <div className="card">
-                    <img
-                      className="prod-img"
-                      src={product.image}
-                      alt={product.id}
-                    />
+                    <div className="outer-img">
+                      <img
+                        className="prod-img"
+                        src={product.image}
+                        alt={product.id}
+                      />
+                      <div
+                        className="heart-like"
+                        onClick={() => likeClick(product.id)}
+                      >
+                        <i className="fas fa-heart heart-box" />
+                      </div>
+                    </div>
                     <div className="detail-outer">
                       <div className="prod-title">
                         {product.year} {product.name}
