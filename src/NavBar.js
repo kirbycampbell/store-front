@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavBar.css";
 
-const NavBar = () => {
+const NavBar = props => {
   return (
     <div className="navbar">
       <div className="inner-nav">
@@ -11,8 +11,9 @@ const NavBar = () => {
         <div className="title">Vantage Vintage</div>
         <div className="heart-cart-cont">
           <div className="cart-area">
-            <div className="heart-cont">
+            <div className="heart-cont" onClick={props.handleLikeFilter}>
               <i className="fas fa-heart heart-icon" />
+              {props.likeList.length > 0 && props.likeList.length}
             </div>
             <i className="fas fa-shopping-cart cart-icon" />
           </div>

@@ -9,9 +9,13 @@ function App() {
   const [category, setCategory] = useState("");
   const [likeList, setLikeList] = useState([]);
   console.log(likeList);
+
+  const handleLikeFilter = () => {
+    setCategory("liked");
+  };
   return (
     <div>
-      <NavBar likeList={likeList} />
+      <NavBar likeList={likeList} handleLikeFilter={handleLikeFilter} />
       <FilterBar setCategory={setCategory} />
       <MainContent
         category={category}

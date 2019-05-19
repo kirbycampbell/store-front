@@ -75,12 +75,21 @@
     margin: auto;
     justify-content: center;
     align-content: center;
-    height: 36px;
-    width: 36px;
+    height: 28px;
+    width: 28px;
+    margin-left: -12px;
+  }
+
+  .heart-cont:hover {
+    color: rgba(0, 0, 255, 0.486);
+    cursor: pointer;
   }
 
   .heart-icon {
     color: rgba(202, 37, 37, 0.637);
+  }
+  .heart-icon:hover {
+    color: rgba(0, 0, 255, 0.466);
   }
 }
 @media only screen and (max-width: 900px) {
@@ -166,7 +175,14 @@
     margin-left: -12px;
   }
 
+  .heart-cont:hover {
+    color: blue;
+  }
+
   .heart-icon {
     color: rgba(202, 37, 37, 0.637);
+  }
+  .heart-icon:hover {
+    color: blue;
   }
 }
