@@ -7,6 +7,10 @@ const MainContent = props => {
     console.log(id);
   };
 
+  const likeClick = id => {
+    console.log(id);
+  };
+
   useEffect(() => {
     console.log(props.category);
   }, [props.category]);
@@ -29,7 +33,10 @@ const MainContent = props => {
                       src={product.image}
                       alt={product.id}
                     />
-                    <div className="heart-like">
+                    <div
+                      className="heart-like"
+                      onClick={() => likeClick(product.id)}
+                    >
                       <i className="fas fa-heart heart-box" />
                     </div>
                   </div>
@@ -77,7 +84,7 @@ const MainContent = props => {
                   </div>
                 </div>
               );
-            }
+            } else return null;
           })}
         </div>
       );
