@@ -7,12 +7,17 @@ import FilterBar from "./FilterBar";
 
 function App() {
   const [category, setCategory] = useState("");
-
+  const [likeList, setLikeList] = useState([]);
+  console.log(likeList);
   return (
     <div>
-      <NavBar />
+      <NavBar likeList={likeList} />
       <FilterBar setCategory={setCategory} />
-      <MainContent category={category} />
+      <MainContent
+        category={category}
+        setLikeList={setLikeList}
+        likeList={likeList}
+      />
       <Footer />
     </div>
   );

@@ -8,7 +8,7 @@ const MainContent = props => {
   };
 
   const likeClick = id => {
-    console.log(id);
+    props.setLikeList([...props.likeList, id]);
   };
 
   useEffect(() => {
