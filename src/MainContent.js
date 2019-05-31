@@ -3,6 +3,7 @@ import "./MainContent.css";
 import { allSeedProductData } from "./StoreData";
 import LikedView from "./LikedView";
 import FilteredList from "./FilteredList";
+import MainProductList from "./MainProductList";
 
 const MainContent = props => {
   const productClick = id => {
@@ -23,40 +24,11 @@ const MainContent = props => {
     if (props.category === "" || props.category === "All") {
       return (
         <div className="outer-cont">
-          {allSeedProductData.map(product => {
-            return (
-              <div
-                key={product.id}
-                className="card-cont"
-                onClick={() => productClick(product.id)}
-              >
-                <div className="card">
-                  <div className="outer-img">
-                    <img
-                      className="prod-img"
-                      src={product.image}
-                      alt={product.id}
-                    />
-                    <div
-                      className="heart-like"
-                      onClick={() => likeClick(product.id)}
-                    >
-                      <i className="fas fa-heart heart-box" />
-                    </div>
-                  </div>
-                  <div className="detail-outer">
-                    <div className="prod-title">
-                      {product.year} {product.name}
-                    </div>
-                    <div className="prod-details">
-                      <p className="prod-price">${product.price}</p>
-                      <p className="prod-size">{product.size}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+          <MainProductList
+            productClick={productClick}
+            likeClick={likeClick}
+            allSeedProductData={allSeedProductData}
+          />
         </div>
       );
     } else if (
