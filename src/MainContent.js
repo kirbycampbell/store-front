@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./MainContent.css";
 import { allSeedProductData } from "./StoreData";
+import LikedView from "./LikedView";
 
 const MainContent = props => {
   const productClick = id => {
@@ -106,43 +107,12 @@ const MainContent = props => {
     } else if (props.category === "liked") {
       return (
         <div className="outer-cont">
-          {allSeedProductData.map(product => {
-            let found = props.likeList.find(i => i === product.id);
-            if (found) {
-              return (
-                <div
-                  key={product.id}
-                  className="card-cont"
-                  onClick={() => productClick(product.id)}
-                >
-                  <div className="card">
-                    <div className="outer-img">
-                      <img
-                        className="prod-img"
-                        src={product.image}
-                        alt={product.id}
-                      />
-                      <div
-                        className="heart-like"
-                        onClick={() => likeClick(product.id)}
-                      >
-                        <i className="fas fa-heart heart-box" />
-                      </div>
-                    </div>
-                    <div className="detail-outer">
-                      <div className="prod-title">
-                        {product.year} {product.name}
-                      </div>
-                      <div className="prod-details">
-                        <p className="prod-price">${product.price}</p>
-                        <p className="prod-size">{product.size}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            } else return null;
-          })}
+          <LikedView
+            productClick={productClick}
+            likeClick={likeClick}
+            likeList={props.likeList}
+            allSeedProductData={allSeedProductData}
+          />
         </div>
       );
     }
