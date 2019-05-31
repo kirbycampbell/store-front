@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./MainContent.css";
 import LikedView from "../17 LikePage/LikedView";
-import FilteredList from "../FilteredList";
+import FilteredList from "./FilteredList";
 import MainProductList from "./MainProductList";
 import { allSeedProductData } from "../101 SeedData/StoreData";
 

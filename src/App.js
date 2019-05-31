@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Footer from "./99 Footers/Footer";
-import NavBar from "./NavBar";
+import NavBar from "./01 NavBar/NavBar";
 import FilterBar from "./21 Filter/FilterBar";
 import MainContent from "./05 MainPage/MainContent";
 
