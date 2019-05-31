@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./MainContent.css";
 import { allSeedProductData } from "./StoreData";
 import LikedView from "./LikedView";
+import FilteredList from "./FilteredList";
 
 const MainContent = props => {
   const productClick = id => {
@@ -66,42 +67,12 @@ const MainContent = props => {
       // ::::::::: When a Filter IS applied - render the FILTERED List :::::::::::::::
       return (
         <div className="outer-cont">
-          {allSeedProductData.map(product => {
-            if (product.type === props.category) {
-              return (
-                <div
-                  key={product.id}
-                  className="card-cont"
-                  onClick={() => productClick(product.id)}
-                >
-                  <div className="card">
-                    <div className="outer-img">
-                      <img
-                        className="prod-img"
-                        src={product.image}
-                        alt={product.id}
-                      />
-                      <div
-                        className="heart-like"
-                        onClick={() => likeClick(product.id)}
-                      >
-                        <i className="fas fa-heart heart-box" />
-                      </div>
-                    </div>
-                    <div className="detail-outer">
-                      <div className="prod-title">
-                        {product.year} {product.name}
-                      </div>
-                      <div className="prod-details">
-                        <p className="prod-price">${product.price}</p>
-                        <p className="prod-size">{product.size}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            } else return null;
-          })}
+          <FilteredList
+            productClick={productClick}
+            likeClick={likeClick}
+            category={props.category}
+            allSeedProductData={allSeedProductData}
+          />
         </div>
       );
     } else if (props.category === "liked") {
