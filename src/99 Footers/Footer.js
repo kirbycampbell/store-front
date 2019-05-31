@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Footer.css";
-import useInterval from "./useInterval";
+import useInterval from "../100 Functions/useInterval";
 
 const Footer = () => {
   const [emailClick, setEmailClick] = useState(false);

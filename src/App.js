@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
-import Footer from "./Footer";
+import Footer from "./99 Footers/Footer";
 import NavBar from "./NavBar";
-import MainContent from "./MainContent";
-import FilterBar from "./FilterBar";
+import FilterBar from "./21 Filter/FilterBar";
+import MainContent from "./05 MainPage/MainContent";
 
 function App() {
   const [category, setCategory] = useState("");

@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "./MainContent.css";
-import { allSeedProductData } from "./StoreData";
-import LikedView from "./LikedView";
-import FilteredList from "./FilteredList";
+import LikedView from "../17 LikePage/LikedView";
+import FilteredList from "../FilteredList";
 import MainProductList from "./MainProductList";
+import { allSeedProductData } from "../101 SeedData/StoreData";
 
 const MainContent = props => {
   const productClick = id => {
