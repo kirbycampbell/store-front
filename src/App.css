@@ -5,6 +5,17 @@
   transition: all 0.7s ease;
 }
 
+.Modal-Outer {
+  opacity: 0.8;
+  filter: brightness(50%);
+  background: grey;
+  transition: all 0.4s ease-in-out;
+}
+
+.no-modal {
+  transition: all 0.4s ease-in-out;
+}
+
 /* font-family: 'Amatic SC', cursive;
 font-family: 'Cairo', sans-serif;
 font-family: 'Permanent Marker', cursive;

@@ -57,7 +57,7 @@ const product7 = product(
   9,
   "Large",
   2002,
-  "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSQczcbZXXVSiBZZrO4i7kgcu7u9e-mcjmLyTm9jhaaYciErP0B_aj_VlEe9KFRenT8ncMjvC61gABX1rMH8ThzUJMAUGIeelYR58mGZ0zgjz02SLljAJLb&usqp=CAE"
+  "https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/osbfnkfhwsei1i4oc4fu/underwear-p63fBL.jpg"
 );
 const product8 = product(
   "Black Floral Dress",
@@ -81,7 +81,7 @@ const product10 = product(
   99,
   "Large",
   1997,
-  "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSWReAvP4LV55WXUFFXxQ-_XUZ4iJ1zJTnMU7Sczu3hZPhPc0NZtKC5aNrkgNuqNWn5JeUwXMFcA-JUXc-dmwTGZV7gYDo60EBzE_3fnck&usqp=CAE"
+  "https://oldnavy.gap.com/webcontent/0016/994/546/cn16994546.jpg"
 );
 const product11 = product(
   "Men's Fossil Watch",
@@ -89,7 +89,7 @@ const product11 = product(
   105,
   "All Sizes",
   1998,
-  "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTYktdPpvZdjSNiHqYApH8Dq6s-6h3vKdkCB3Ki-7t7zcfMbpDmmc-_zWSvgn-VYY8jtTZ3ztPaZYSamEUWIEXDiUFZtAuXmaFI6jPBuZgHHrg-cy5MhKO7&usqp=CAE"
+  "https://slimages.macysassets.com/is/image/MCY/products/5/optimized/1265835_fpx.tif?op_sharpen=1&wid=500&hei=613&fit=fit,1&$filtersm$"
 );
 const product12 = product(
   "Button Up Denim Shirt",

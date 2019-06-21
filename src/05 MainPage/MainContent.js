@@ -6,10 +6,6 @@ import MainProductList from "./MainProductList";
 import { allSeedProductData } from "../101 SeedData/StoreData";
 
 const MainContent = props => {
-  const productClick = id => {
-    console.log(id);
-  };
-
   const likeClick = id => {
     let newLikeList = props.likeList.filter(item => item !== id);
     props.setLikeList([...newLikeList, id]);
@@ -25,9 +21,9 @@ const MainContent = props => {
       return (
         <div className="outer-cont">
           <MainProductList
-            productClick={productClick}
             likeClick={likeClick}
             allSeedProductData={allSeedProductData}
+            productViewSwitch={props.productViewSwitch}
           />
         </div>
       );
@@ -40,10 +36,10 @@ const MainContent = props => {
       return (
         <div className="outer-cont">
           <FilteredList
-            productClick={productClick}
             likeClick={likeClick}
             category={props.category}
             allSeedProductData={allSeedProductData}
+            productViewSwitch={props.productViewSwitch}
           />
         </div>
       );
@@ -51,10 +47,10 @@ const MainContent = props => {
       return (
         <div className="outer-cont">
           <LikedView
-            productClick={productClick}
             likeClick={likeClick}
             likeList={props.likeList}
             allSeedProductData={allSeedProductData}
+            productViewSwitch={props.productViewSwitch}
           />
         </div>
       );

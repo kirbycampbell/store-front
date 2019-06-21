@@ -4,13 +4,12 @@ const FilteredList = props => {
   return props.allSeedProductData.map(product => {
     if (product.type === props.category) {
       return (
-        <div
-          key={product.id}
-          className="card-cont"
-          onClick={() => props.productClick(product.id)}
-        >
+        <div key={product.id} className="card-cont">
           <div className="card">
-            <div className="outer-img">
+            <div
+              className="outer-img"
+              onClick={() => props.productViewSwitch(product.id)}
+            >
               <img className="prod-img" src={product.image} alt={product.id} />
               <div
                 className="heart-like"

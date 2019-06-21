@@ -3,14 +3,15 @@ import React from "react";
 const MainProductList = props => {
   return props.allSeedProductData.map(product => {
     return (
-      <div
-        key={product.id}
-        className="card-cont"
-        onClick={() => props.productClick(product.id)}
-      >
+      <div key={product.id} className="card-cont">
         <div className="card">
           <div className="outer-img">
-            <img className="prod-img" src={product.image} alt={product.id} />
+            <img
+              className="prod-img"
+              src={product.image}
+              alt={product.id}
+              onClick={() => props.productViewSwitch(product.id)}
+            />
             <div
               className="heart-like"
               onClick={() => props.likeClick(product.id)}
