@@ -19,13 +19,7 @@ function App() {
   };
 
   const productViewSwitch = id => {
-    if (id === 22 && productView) {
-      setProductView(false);
-    } else if (id === 22 && !productView) {
-      setProductView(false);
-    } else {
-      setProductView(true);
-    }
+    setProductView(!productView);
 
     setProductChosen(id);
   };
@@ -42,10 +36,7 @@ function App() {
         </div>
       )}
 
-      <div
-        className={productView ? "Modal-Outer" : "no-modal"}
-        onClick={() => productViewSwitch(22)}
-      >
+      <div className={productView ? "Modal-Outer" : "no-modal"}>
         <NavBar likeList={likeList} handleLikeFilter={handleLikeFilter} />
         <FilterBar setCategory={setCategory} />
         <MainContent
