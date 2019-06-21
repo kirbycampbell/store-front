@@ -6,7 +6,7 @@
   width: 100%;
   height: 100%;
   margin: auto;
-  background: rgba(255, 255, 255, 0.247);
+  /* background: rgba(97, 187, 240, 0.247); */
   z-index: 50;
 }
 
@@ -16,8 +16,8 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 60%;
-  height: 50%;
+  width: 70%;
+  height: 60%;
   background: white;
   z-index: 200;
   left: 0;
@@ -25,4 +25,73 @@
   margin-top: 25%;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
+}
+
+.Inner-Box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 98%;
+  height: 94%;
+}
+
+.big-img-box {
+  height: 80%;
+  width: 50%;
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid rgba(20, 20, 97, 0.041);
+  border-radius: 10px;
+  background: rgba(102, 160, 155, 0.205);
+}
+
+.big-title {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.descr {
+  width: 100%;
+}
+
+.big-details {
+  width: 100%;
+  text-align: center;
+}
+
+.detail-side {
+  width: 44%;
+  margin-top: 20px;
+}
+
+.img-itself {
+  height: 100%;
+  width: 100%;
+}
+
+.big-details {
+  width: 40%;
+}
+
+.x-out {
+  position: absolute;
+  text-align: right;
+  top: 0;
+  width: 100%;
+}
+
+.icons {
+  margin-right: 20px;
+  margin-top: 12px;
+  font-size: 20px;
+}
+
+.icons:hover {
+  color: rgb(54, 54, 201);
+  cursor: pointer;
 }

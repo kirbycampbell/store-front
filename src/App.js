@@ -12,15 +12,12 @@ function App() {
   const [productView, setProductView] = useState(false);
   const [productChosen, setProductChosen] = useState("");
 
-  // console.log(likeList);
-
   const handleLikeFilter = () => {
     setCategory("liked");
   };
 
   const productViewSwitch = id => {
     setProductView(!productView);
-
     setProductChosen(id);
   };
 

@@ -4,14 +4,12 @@ const MainProductList = props => {
   return props.allSeedProductData.map(product => {
     return (
       <div key={product.id} className="card-cont">
-        <div className="card">
+        <div
+          className="card"
+          onClick={() => props.productViewSwitch(product.id)}
+        >
           <div className="outer-img">
-            <img
-              className="prod-img"
-              src={product.image}
-              alt={product.id}
-              onClick={() => props.productViewSwitch(product.id)}
-            />
+            <img className="prod-img" src={product.image} alt={product.id} />
             <div
               className="heart-like"
               onClick={() => props.likeClick(product.id)}

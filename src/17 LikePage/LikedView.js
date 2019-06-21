@@ -6,11 +6,11 @@ const LikedView = props => {
     if (found) {
       return (
         <div key={product.id} className="card-cont">
-          <div className="card">
-            <div
-              className="outer-img"
-              onClick={() => props.productViewSwitch(product.id)}
-            >
+          <div
+            className="card"
+            onClick={() => props.productViewSwitch(product.id)}
+          >
+            <div className="outer-img">
               <img className="prod-img" src={product.image} alt={product.id} />
               <div
                 className="heart-like"

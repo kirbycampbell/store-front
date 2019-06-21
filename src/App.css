@@ -8,12 +8,12 @@
 .Modal-Outer {
   opacity: 0.8;
   filter: brightness(50%);
-  background: grey;
-  transition: all 0.4s ease-in-out;
+  background: rgb(94, 119, 136);
+  transition: all 0.4s ease;
 }
 
 .no-modal {
-  transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease;
 }
 
 /* font-family: 'Amatic SC', cursive;
