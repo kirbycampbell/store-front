@@ -19,8 +19,8 @@ const ProductPage = props => {
         onClick={() => props.productViewSwitch(22)}
       />
       <div className="Product-Box">
-        <div className="x-out">
-          <i className="fas fa-times icons" />
+        <div className="x-out" onClick={() => props.productViewSwitch(22)}>
+          <i className="fas fa-times icons-x" />
         </div>
 
         <div className="Inner-Box">
@@ -48,8 +48,10 @@ const ProductPage = props => {
                 This is a sample description, so it will appear on every
                 product!
               </div>
-              <div className="b-prod-price">${selectedProduct.price}</div>
-              <div className="b-prod-size">{selectedProduct.size}</div>
+              <div className="outer-details">
+                <div className="b-prod-price">${selectedProduct.price}</div>
+                <div className="b-prod-size">{selectedProduct.size}</div>
+              </div>
             </div>
           </div>
 
