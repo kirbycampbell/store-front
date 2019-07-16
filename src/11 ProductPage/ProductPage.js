@@ -55,9 +55,12 @@ const ProductPage = props => {
             </div>
           </div>
 
-          <div className="cart-icon-box">
+          {/* <div
+            className="cart-icon-box"
+            onClick={() => props.likeClick(props.productChosen)}
+          >
             <i className="fas fa-shopping-cart icons" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

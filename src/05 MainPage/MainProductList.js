@@ -14,7 +14,7 @@ const MainProductList = props => {
               className="heart-like"
               onClick={() => props.likeClick(product.id)}
             >
-              <i className="fas fa-heart heart-box" />
+              <i className="fas fa-shopping-cart heart-box" />
             </div>
           </div>
           <div className="detail-outer">
